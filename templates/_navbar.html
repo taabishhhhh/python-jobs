@@ -1,0 +1,44 @@
+{% load static %}
+<nav id="nav" class="navbar navbar-expand-lg navbar-fixed-top">
+  <div class="container-fluid p-0">
+
+  <a class="navbar-brand" href="/">
+    <div class="d-flex align-items-center">
+      <i class="fab fa-python fa-2x"></i> <span class="pl-2">PythonJobs</span>
+    </div>
+  </a>
+
+  <button type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="false"
+          aria-controls="navbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div id="navbar" class="collapse navbar-collapse">
+    <ul class="nav navbar-default navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link px-md-3" href="{% url 'home' %}#roles">Roles</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link px-md-3" href="{% url 'home' %}#requirements">Requirements</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link px-md-3" href="mailto:apply@pythonjobs.in" rel="_nofollow">
+          Apply
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link px-md-3" href="mailto:hello@pythonjobs.in" rel="nofollow">
+          Contact Us
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>

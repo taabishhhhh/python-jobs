@@ -1,0 +1,244 @@
+{% extends '_blank.html' %}
+
+{% block customstyle %}
+{{ block.super }}
+<style>
+#nav {
+  background-color: #ffe783;
+}
+#cover {
+  margin-top: -80px;
+  padding-top: 80px;
+  height: 62.5vw;
+  max-height: 675px;
+  background-color: inherit;
+  background: linear-gradient(180deg, #ffe783 80px, #ffffff 100%);
+  display: flex;
+  justify-content: center;
+}
+#cover #cover-content {
+  width: 100%;
+}
+#cover h1 {
+  font-size: 4em;
+  font-weight: 900;
+  color: #306998;
+}
+#cover h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #306998;
+  line-height: 150%;
+  padding: 0;
+}
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  #cover { height: 100vw; }
+  #cover #cover-content {
+    height: 100vw;
+    max-height: unset;
+  }
+}
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  #cover {
+    height: 100vh;
+    max-height: 1024px;
+  }
+  #cover #cover-content {
+    height: calc(100vh - 80px);
+    max-height: 902px;
+    width: calc(0.55 * (100vh - 124px));
+    padding-bottom: 0;
+  }
+  #cover h1 {
+    font-size: 2.5em;
+  }
+  #cover h2 {
+    font-size: 1.75em;
+  }
+}
+.section-header h2 {
+  font-size: 2em;
+  font-weight: 900;
+  margin: 0;
+}
+.feature-icon {
+  padding-left: 0;
+  padding-right: 0.75rem;
+}
+.feature-header {
+  font-size: 1.5em;
+  font-weight: ital;
+}
+.job-role {
+  background-color: #ffd43b;
+  border-radius: 4px;
+}
+.responsibility {
+  border-radius: 4px;
+}
+.job-role .fa-2x {
+  font-size: 1.5em;
+}
+.job-role .fa-stack-2x {
+  color: #4b8bbe;
+}
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .section-header {
+    margin: 1.5rem auto;
+  }
+}
+.fa-ul { margin-left: 1.5em; }
+</style>
+{% endblock %}
+
+{% block cover %}
+<div id="cover" class="">
+  <div id="cover-content" class="my-sm-auto h-100">
+    <div id="cover-container" class="container h-100">
+      <div class="row h-100">
+        <div class="col-12 align-self-center text-center">
+          <h1>
+            <i class="fab fa-python"></i>
+            <span class="text-nowrap">Python Jobs</span>
+          </h1>
+        </div>
+        {% comment %}
+        <div class="col-12 align-self-center text-center">
+          <h2>Interesting work.</h2>
+          <h2>Exciting opportunities.</h2>
+        </div>
+        {% endcomment %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block rawcontent %}
+{% if roles %}
+<section id="roles" class="py-md-4" style="font-size: 1.25rem;">
+<div class="container">
+  <div class="row">
+    <div class="col-12 ">
+      <div class="features-text section-header text-left text-lg-center">
+        <h2 class="section-title">Available Roles</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-lg-2 my-lg-5">
+    {% for role in roles %}
+    <div class="col mb-3 mb-md-0">
+      <a href="mailto:apply@pythonjobs.in?subject={{ role.name }}" target="_nofollow">
+      <div class="job-role p-4 my-1 my-lg-3">
+        <div class="d-inline-flex">
+          <div class="feature-icon align-self-center">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-square fa-stack-2x"></i>
+            <i class="fab fa-python fa-stack-1x fa-inverse"></i>
+          </span>
+          </div>
+          <div class="feature-header align-self-center">
+            <div class="font-weight-bold">
+              <span>{{ role.name }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section> 
+{% endif %}
+
+{% if responsibilities %}
+<section id="responsibilities" class="py-md-4" style="font-size: 1.25rem; background-color: #4b8bbe80;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 ">
+        <div class="features-text section-header text-left text-lg-center">
+          <h2 class="section-title">Responsibilities</h2>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row row-cols-1 my-lg-5">
+      {% for responsibility in responsibilities %}
+      <div class="col mb-3 mb-md-0">
+        <div class="responsibility bg-white p-4 my-1 my-lg-3">
+          <div class="d-inline-flex">
+            <div class="feature-icon align-self-center">
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div class="feature-header align-self-center pl-3">
+              <div class="font-weight-bold">
+                <span>{{ responsibility.name }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section> 
+{% endif %}
+
+{% if requirements %}
+<section id="requirements" class="py-md-4" style="font-size: 1.25rem;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 ">
+        <div class="features-text section-header text-left text-lg-center">
+          <h2 class="section-title">Requirements</h2>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row row-cols-1 row-cols-lg-3 my-lg-5">
+      {% for itemgroup in requirements %}
+      <div class="col mb-3 mb-md-0">
+        <div class="pr-4 my-1 my-lg-3">
+          <div class="d-inline-flex">
+            {% comment %}
+            <div class="feature-icon align-self-center">
+              <span class="fa-stack fa">
+                <i class="fas fa-square fa-stack-2x"></i>
+                <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            {% endcomment %}
+            <div class="feature-header align-self-center">
+              <div class="font-weight-bold my-2">
+                <span>{{ itemgroup.name }}</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <ul class="fa-ul">
+              {% for item in itemgroup.items %}
+              <li><span class="fa-li pl-0"><i class="fas fa-angle-right"></i></span>
+                {% autoescape off %}{{ item }}{% endautoescape %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section> 
+{% endif %}
+
+{% endblock %}
+
+{% block footer %}
+{% include '_footer.html' %}
+{% endblock %}

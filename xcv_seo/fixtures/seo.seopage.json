@@ -1,0 +1,324 @@
+[
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 1,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/",
+      "page_name": "Financial Machines",
+      "page_title": "",
+      "description": "Financial Machines powers energy by creating software that accelerates development, analyses investment, and optimizes operating assets.",
+      "keywords": "Financial Machines finmachines"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 2,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/sitemap/",
+      "page_name": null,
+      "page_title": null,
+      "description": null,
+      "keywords": "Financial Machines finmachines sitemap"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 3,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/about/",
+      "page_name": null,
+      "page_title": "About",
+      "description": "About Financial Machines",
+      "keywords": "Financial Machines finmachines about"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 4,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/profile/",
+      "page_name": null,
+      "page_title": "Profile",
+      "description": "Financial Machines Profile",
+      "keywords": "Financial Machines finmachines profile"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 5,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/leadership/",
+      "page_name": null,
+      "page_title": "Leadership",
+      "description": "Financial Machines is led by Vishal Apte, co-founder and CEO.",
+      "keywords": "Financial Machines finmachines leadership"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 6,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/board/",
+      "page_name": null,
+      "page_title": "Board of Directors",
+      "description": "Financial Machines Board of Directors",
+      "keywords": "Financial Machines finmachines Board of Directors"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 7,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/advisors/",
+      "page_name": null,
+      "page_title": "Advisors",
+      "description": "Financial Machines Advisors include Peter Knowles (pathtozero.io)",
+      "keywords": "Financial Machines finmachines advisors"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 8,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/team/",
+      "page_name": null,
+      "page_title": "Profile",
+      "description": "Financial Machines Profile",
+      "keywords": "Financial Machines finmachines profile"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 9,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/pricing/",
+      "page_name": null,
+      "page_title": "Pricing",
+      "description": "Financial Machines Pricing",
+      "keywords": "Financial Machines finmachines pricing"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 10,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/jobs/",
+      "page_name": null,
+      "page_title": "Jobs",
+      "description": "Financial Machines Jobs",
+      "keywords": "Financial Machines finmachines jobs"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 11,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/signup/",
+      "page_name": null,
+      "page_title": "Signup",
+      "description": "Financial Machines Signup",
+      "keywords": "Financial Machines finmachines signup"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 12,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/login/",
+      "page_name": null,
+      "page_title": "Login",
+      "description": "Financial Machines Login",
+      "keywords": "Financial Machines finmachines login"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 13,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/logout/",
+      "page_name": null,
+      "page_title": "Logout",
+      "description": "Financial Machines Logout",
+      "keywords": "Financial Machines finmachines logout"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 14,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/change-password/",
+      "page_name": null,
+      "page_title": "Change Password",
+      "description": "Change Password",
+      "keywords": "Financial Machines finmachines change password"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 15,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/reset-password/",
+      "page_name": null,
+      "page_title": "Reset Password",
+      "description": "Reset Password",
+      "keywords": "Financial Machines finmachines reset password"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 16,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/terms-of-service/",
+      "page_name": null,
+      "page_title": "Terms Of Service",
+      "description": "Financial Machines Terms Of Service",
+      "keywords": "Financial Machines finmachines terms of service"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 17,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/privacy-policy/",
+      "page_name": null,
+      "page_title": "Privacy Policy",
+      "description": "Financial Machines Privacy Policy",
+      "keywords": "Financial Machines finmachines privacy policy"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 18,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/refund-policy/",
+      "page_name": null,
+      "page_title": "Refund Policy",
+      "description": "Financial Machines Refund Policy",
+      "keywords": "Financial Machines finmachines refund policy"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 19,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/account/",
+      "page_name": null,
+      "page_title": "Account",
+      "description": "Financial Machines Account",
+      "keywords": "Financial Machines finmachines account"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 20,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/products/",
+      "page_name": null,
+      "page_title": "Products",
+      "description": "Financial Machines Products",
+      "keywords": "Financial Machines finmachines products rabbit raptor octopus voyager"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 21,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/services/",
+      "page_name": null,
+      "page_title": "Services",
+      "description": "Financial Machines Services",
+      "keywords": "Financial Machines finmachines advisory asset development modeling risk-management fleet-management"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 22,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/glossary/",
+      "page_name": null,
+      "page_title": "Glossary",
+      "description": "Glossary",
+      "keywords": "Financial Machines finmachines energy-101 glossary"
+    }
+  },
+  {
+    "model": "xcv_seo.seopage",
+    "pk": 23,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "canonical": "/bess/primer/",
+      "page_name": null,
+      "page_title": "BESS Primer",
+      "description": "Financial Machines BESS Primer",
+      "keywords": "Financial Machines finmachines energy-101 bess primer"
+    }
+  }
+]

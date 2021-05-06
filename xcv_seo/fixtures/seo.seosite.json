@@ -1,0 +1,15 @@
+[
+  {
+    "model": "xcv_seo.seosite",
+    "pk": 1,
+    "fields": {
+      "dtm_created": "2021-04-15T00:00:00Z",
+      "dtm_updated": "2021-04-15T00:00:00Z",
+      "site": 1,
+      "name": "FlexGen",
+      "title": "",
+      "domain": "asgard.flexgen.com",
+      "twitter": "flexgen"
+    }
+  }
+]
