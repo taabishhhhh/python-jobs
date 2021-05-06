@@ -30,6 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
+    'pythonjobs.in',
+    'www.pythonjobs.in'
 ]
 
 
@@ -157,8 +159,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = os.getenv('EMAIL_HOST')
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
-DEFAULT_FROM_EMAIL = 'notifications@1e9solutions.com'
-SERVER_EMAIL = 'notifications@1e9solutions.com'
+DEFAULT_FROM_EMAIL = 'no-reply@pythonjobs.in'
+SERVER_EMAIL = 'no-reply@pythonjobs.in'
 EMAIL_PORT = 587
 
 EMAIL_PROVIDER = 'aws'
