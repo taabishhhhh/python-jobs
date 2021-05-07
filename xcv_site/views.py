@@ -21,13 +21,16 @@ class HomeView(SEOMixin, TemplateView):
         ],
         "responsibilities": [
             {
-                "name": "Develop and deploy applications"
+                "name": "Develop applications"
             },
             {
                 "name": "Write tests"
             },
             {
-                "name": "Write documentation for developers + customers"
+                "name": "Write documentation"
+            },
+            {
+                "name": "Deploy applications"
             }
         ],
         "requirements": [
