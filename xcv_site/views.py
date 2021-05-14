@@ -72,4 +72,4 @@ class HomeView(SEOMixin, TemplateView):
 
 
 class ApplyView(SEOMixin, TemplateView):
-    template_name = 'interview.html'
+    template_name = 'apply.html'
