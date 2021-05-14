@@ -1,0 +1,91 @@
+{% extends '_blank.html' %}
+{% load static %}
+{% block customstyle %}
+{{ block.super }}
+<style>
+section {
+    min-height: 6rem;
+    font-size: 1.5rem;
+}
+section:first-of-type {
+    min-height: unset;
+    margin-bottom: 3'''rem;
+}
+section h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+</style>
+{% endblock %}
+
+{% block rawcontent %}
+<section class="px-md-3">
+    <div class="container-xl">
+        <h1 class="font-weight-bold">Application</h1>
+    </div>
+</section>
+
+
+<section class="px-md-3">
+    <div class="container-xl">
+        <div class="d-inline-flex align-items-center">
+            <div class="pr-3">
+                <span class="fa-stack" style="width: 2em;">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <span class="fa-stack-1x fa-inverse text-center" style="font-size: 1.25em; font-weight: 900;">1</span>
+                </span>
+            </div>
+            <div>
+                <h2><a href="https://www.1e9advisors.com/appointment/">Make an appointment</a></h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="px-md-3">
+    <div class="container-xl">
+        <div class="d-inline-flex align-items-center">
+            <div class="pr-3">
+                <span class="fa-stack" style="width: 2em;">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <span class="fa-stack-1x fa-inverse text-center" style="font-size: 1.25em; font-weight: 900;">2</span>
+                </span>
+            </div>
+            <div>
+                <h2>Demonstrate skills</h2>
+            </div>
+        </div>
+        <div class="py-4" style="padding-left: 76px;">
+            <p>Showcase your skills and proficiency with tools including the shell, github, python, virtualenv, and Django.</p>
+            <ul>
+                <li>Clone this project from <a href="https://github.com/vishalapte/python-jobs/">github.com/vishalapte/python-jobs/</a></li>
+                <li>Configure your environment</li>
+                <li>Run a test server and load this page from the test server</li>
+                <li>Modify this page to change the color of the circle for bullet 2 to red</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="px-md-3">
+    <div class="container-xl">
+        <div class="d-inline-flex align-items-center">
+            <div class="pr-3">
+                <span class="fa-stack" style="width: 2em;">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <span class="fa-stack-1x fa-inverse text-center" style="font-size: 1.25em; font-weight: 900;">3</span>
+                </span>
+            </div>
+            <div>
+                <h2>One on one interview</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</div>
+{% endblock %}

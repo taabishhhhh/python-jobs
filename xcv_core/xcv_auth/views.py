@@ -9,11 +9,11 @@ from django.utils.decorators import method_decorator
 from django.views.generic import TemplateView
 
 
-def home(request):
-    data = {
-        "canonical": reverse('xcvauth:home')
-    }
-    return render(request, 'home.html', data)
+class HomeView(TemplateView):
+    template_name = 'home.html'
+    # extra_context = {
+    #     'canonical': reverse('xcv_auth:home')
+    # }
 
 
 def logout_request(request):
@@ -46,7 +46,7 @@ def login_request(request):
             messages.error(request, "Invalid username or password.")
     form = CustomAuthenticationForm()
     data = {
-        "canonical": reverse('xcvauth:login'),
+        # "canonical": reverse('xcv_auth:login'),
         "form": form,
     }
     return render(request, 'login.html', data)
@@ -55,12 +55,9 @@ def login_request(request):
 class ChangePasswordView(TemplateView):
     form_class = ChangePasswordForm
     template_name = 'change-password.html'
-
-    def get_context_data(self, **kwargs):
-        ctx = super().get_context_data(**kwargs)
-        ctx.update(dict(form=self.form_class(user=self.request.user)))
-        ctx['canonical'] = reverse('xcvauth:change_password')
-        return ctx
+    # extra_context = {
+    #     'canonical': reverse('xcv_auth:change_password')
+    # }
 
     @method_decorator(login_required)
     def dispatch(self, request, *args, **kwargs):

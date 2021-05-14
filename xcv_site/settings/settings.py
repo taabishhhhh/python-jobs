@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'rangefilter',
     'xcv_core',
     'xcv_seo',
+    'xcv_core.xcv_auth',
 ]
 
 MIDDLEWARE = [

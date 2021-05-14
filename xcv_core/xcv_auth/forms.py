@@ -8,7 +8,7 @@ class CustomAuthenticationForm(AuthenticationForm):
         widget=forms.TextInput(
             attrs={
                 'class': 'form-control foo-border',
-                'placeholder': 'user@blklab.io'
+                'placeholder': 'email@xcv.org'
             }
         )
     )

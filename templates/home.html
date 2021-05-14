@@ -4,13 +4,13 @@
 {{ block.super }}
 <style>
 #nav {
-  background-color: #306998;
+  /* background-color: #306998; */
 }
 #cover {
   margin-top: -80px;
   padding-top: 80px;
   background-color: inherit;
-  background: linear-gradient(180deg, #306998 80px, #ffffff 100%);
+  /* background: linear-gradient(180deg, #306998 80px, #ffffff 100%); */
   display: flex;
   justify-content: center;
 }
@@ -20,12 +20,12 @@
 #cover h1 {
   font-size: 4em;
   font-weight: 900;
-  color: #306998;
+  /* color: #306998; */
 }
 #cover h2 {
   font-size: 3rem;
   font-weight: 400;
-  color: #306998;
+  /* color: #306998; */
   line-height: 150%;
   padding: 0;
 }
@@ -60,7 +60,7 @@
   font-weight: ital;
 }
 .job-role {
-  background-color: #ffd43b;
+  background-color: #ffd43b80;
   border-radius: 4px;
 }
 .responsibility {
@@ -69,12 +69,11 @@
 .job-role .fa-2x {
   font-size: 1.5em;
 }
-.job-role .fa-stack-2x {
-  color: #4b8bbe;
+.responsibility {
+  background-color: #4b8bbe80 !important;
+  border-radius: 4px;
 }
-#responsibilities {
-  background: linear-gradient(180deg, #ffffff 0, #30699880 50%, #ffffff 100%);
-}
+
 @media screen and (max-width: 767px) and (orientation: portrait) {
   .section-header {
     margin: 1.5rem auto;
@@ -109,13 +108,13 @@
   <div class="row row-cols-1 row-cols-lg-2 my-4 my-md-5">
     {% for role in roles %}
     <div class="col mb-3 mb-md-0">
-      <a href="mailto:apply@pythonjobs.in?subject={{ role.name }}" target="_nofollow">
-      <div class="job-role p-4 my-1 my-lg-3">
+      <a href="{% url 'apply' %}?role={{ role.name }}">
+      <div class="job-role p-3 my-1 my-lg-3">
         <div class="d-inline-flex">
           <div class="feature-icon align-self-center">
-            <span class="fa-stack fa-2x">
+            <span class="fa-stack">
               <i class="fas fa-square fa-stack-2x"></i>
-            <i class="fab fa-python fa-stack-1x fa-inverse"></i>
+              <i class="fab fa-python fa-stack-1x fa-inverse"></i>
           </span>
           </div>
           <div class="feature-header align-self-center">
@@ -221,4 +220,14 @@
 
 {% block footer %}
 {% include '_footer.html' %}
+{% endblock %}
+
+{% block customscript %}
+{{ block.super}}
+<script>
+  function applyRole(role) {
+    location.url = "{% url 'apply' %}?role=" + role
+
+  }
+</script>
 {% endblock %}
