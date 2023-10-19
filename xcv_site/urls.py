@@ -5,8 +5,10 @@ from django.urls import path, include
 from .sitemaps import StaticViewSitemap
 from .views import HomeView, ApplyView
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('card/', include('cars.urls')),
 ]
 
 # Sitemap
