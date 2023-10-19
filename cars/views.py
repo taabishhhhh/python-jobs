@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def cars_index(request):
+    # return "<h1>My First Function !@#”</h1>"
+    return "My First Function !@#”"
